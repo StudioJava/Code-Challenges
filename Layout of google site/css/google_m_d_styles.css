@@ -1,0 +1,201 @@
+@charset "UTF-8";
+/* CSS Document */
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	
+}
+
+body {
+	font-family: 'Nunito', sans-serif;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 1200px;
+	
+	
+}
+
+.top-nav {
+    margin-top: 50px;
+    box-shadow:  0 5px 8px -5px black;
+}
+.top-nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 10px;
+	overflow: hidden;
+}
+.top-nav li {
+	
+	float: right;
+	
+	margin:0px 10px 0px 10px;
+}
+.top-nav a {
+	display: block;
+	text-align: center;
+	padding: 5px;
+
+	text-decoration: none;
+	color: #000;
+	color: #828286;
+	font-weight: 400;
+}
+nav li a:hover {
+	color: tomato!important;
+	padding: 5px;
+	border-radius: 5px;
+	 box-shadow:  0 5px 8px -1px black;
+}
+
+
+#company-name  {
+	float: left;
+}
+#company-name a {
+	font-weight: 900;
+	font-size: 1.5em;
+	
+	
+}
+
+.active  {
+	background: rgba(139,138,138,1.00);
+	color: white !important;
+	padding: 5px;
+	border-radius: 5px;
+	 box-shadow:  0 5px 8px -1px black;
+}
+
+.hero-image {
+	
+	background-image: url( images/Google-Home-Mini-Hero.png);
+	min-height: 500px;
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	 
+}
+
+
+#main-title {
+	
+	color: #878787;
+	text-align: center;
+	padding: 70px 20px 10px 20px;
+}
+.row {
+	margin-top: 30px;
+	
+}
+
+.row:before, .row:after {
+	content: "";
+	display: table;
+}
+
+.row:after {
+	clear: both;
+}
+.col {
+	width: 100%;
+	
+}
+.fa-tag {
+	transform: scale(-1,1);
+	color: #20F38E;
+	font-size: 3.7em;
+
+}
+
+.promo-section {
+	
+	color: #828286;
+	text-align: center;
+	padding: 70px 10px;
+	min-height: 300px;
+	background-color: #fafafa;
+}
+.promo-section a {
+	text-decoration: none;
+	color: blue;
+}
+
+.info-section {
+	margin-top: 30px;
+	color: #828286;
+	padding: 70px 10px;
+	min-height: 300px;
+	text-align: center;
+}
+.display-bdrm-section {
+background:no-repeat center/cover url(images/carousel-3.jpg);
+	min-height: 500px;
+	padding-top: 70px;
+	text-align: center;
+}
+.display-bdrm-section button {
+    padding: 30px;
+    border: 1px solid white;
+    border-radius: 17px;
+	background-color: white;
+}
+.display-bdrm-section img {
+	border: 1px solid white;
+	padding: 10px;
+	background-color:white;
+	border-radius: 50%;
+}
+
+
+
+.answer-section {
+	float: left;
+}
+ button {
+	
+	border: 1px solid white;
+	background-color: white;
+	border-radius: 15px;
+	padding: 20px;
+}
+
+
+.col-half {
+	text-align: center;
+	color: #878787;
+    width: 50%;
+    min-height: 350px;
+    
+}
+.col-half-right{
+	
+	color: #878787;
+    width: 50%;
+    min-height: 350px;
+    float: right;
+    
+}
+.content-img-half {
+	padding-top: 180px;
+	float: left;
+   background:no-repeat top/cover url(images/unnamed%20-%207.jpg);
+	
+    
+}
+.content-titl-half {
+	float: right;
+	padding: 7%;
+}
+
+.content-img-half-lft {
+	padding-top: 180px;
+	float: right;
+   background:no-repeat top/cover url('images/unnamed - 6.jpg');
+   
+}
+.content-titl-half-rgt {
+	padding-top: 70px;
+	float: left;
+}
