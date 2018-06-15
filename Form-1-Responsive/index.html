@@ -1,0 +1,152 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Untitled Document</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 778px;
+    font-family: sans-serif;
+}
+button {
+    padding: 10px 25px;
+    text-align: center;
+    background-color: #222826;
+    color: white;
+    border: none;
+    font-size: 1em;
+}
+.button-wrapper {
+    text-align: center;
+}
+h1 {
+    font-weight: lighter;
+}
+fieldset {
+    margin-bottom: 30px;
+    border: none;
+}
+.col {
+    padding-bottom: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 100%;
+    min-height: 500px;
+}
+.row:before, .row:after {
+    content: "";
+    display: table;
+}
+.row:after {
+    clear: both;
+}
+.col_1 {
+    background-color: #1a1c1f;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.col_1 p {
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: lighter;
+    font-size: large;
+}
+.logo {
+    padding: 40px 0px;
+}
+.col_2 {
+    background-color: #214145;
+    color: white;
+    padding-top: 50px;
+}
+.col form h1 {
+    margin-bottom: 25px;
+    text-align: center;
+}
+.logo {
+    width: 100px;
+}
+/*		+++++++++++++++++++++++++++++++++++*/		
+
+input[type="text"],  input[type="password"],  input[type="date"], input[type="datetime"],  input[type="email"],  input[type="number"], input[type="search"],  input[type="tel"], input[type="time"],  input[type="url"],  textarea, select {
+    background: rgba(255,255,255,0.1);
+    border: none;
+    font-size: 16px;
+    height: auto;
+    margin: 0;
+    outline: 0;
+    padding: 15px;
+    width: 100%;
+    background-color: #e8eeef;
+    color: #8a97a0;
+    box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+    margin-bottom: 30px;
+}
+
+/*		Mobile view*/
+		
+@media (min-width: 768px) {
+body {
+    max-width: 778px;
+fieldset {
+ margin-bottom: 30px;
+ border: none;
+}
+}
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+}
+	
+		
+		
+		
+		
+/*		+++++++++++++++++++++++++++++++++++*/
+</style>
+</head>
+
+<body>
+<div class="row">
+  <div  class="col col_1">
+    <div class="wrapper">
+      <h1 >Mission to Deep Space</h1>
+      <img  class="logo" src="images/space-logo.png" alt="space logo">
+      <p>The Future is Here</p>
+    </div>
+  </div>
+  <div  class="col col_2">
+    <form action="index.html" method="post">
+      <h1>Sign Up</h1>
+      <fieldset class="fieldset">
+        
+        <!--		  for should be connected to the id of the input or label-->
+        <label for="name">Username:</label>
+        <input type="text" id="name" name="user_name">
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="user_password">
+        <label for="mail">Email:</label>
+        <input type="email" id="mail" name="user_email">
+      </fieldset>
+      <div class="button-wrapper">
+        <button  type="submit">Join</button>
+      </div>
+    </form>
+  </div>
+</div>
+</body>
+</html>
