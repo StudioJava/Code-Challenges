@@ -1,0 +1,75 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Login-Signup-Form</title>
+	<link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+<link rel="stylesheet" href="css/login_signup_form_styles.css">
+</head>
+
+<body>
+
+	
+	<main>
+	
+		<div class="row">
+			<div class="col col-md-one-half col-md-one-half-ctr">
+				<div class="info-box-tan">
+				  <h2>Account login</h2>
+				  <form action="index.html" method="post">
+					
+					<fieldset>
+					<legend><span class="number">3</span>Acct Login</legend> 
+						<label for="email">Email</label>
+						<input type="email" class="form-control" placeholder="&#xf0e0;" name="user_email">
+						<br>
+						<label for="password">Password</label>
+						<input type="password" id="new-password" class="form-control" placeholder="&#xf13e;" name="user_password">
+					</fieldset>
+					  <label >User Account</label>
+					  <input type="radio" id="keep-user-loggedin" value="keep-user-loggedin" name="user_keep-loggedin"><label style="display: inline" for="keep-user-loggedin">keep me logged-in</label>
+					    
+				  </form>
+					
+					<button type="submit">Login</button>
+					<a href="_blank">forgot your password?</a>
+				</div>
+			</div>
+			<div class="col col-md-one-half">
+				<div class="info-box-dark">
+					
+<!--					<a href="" class="button">Read More</a>-->
+					 <h1>Sign Up</h1>
+					 <form action="index.html" method="post">
+		 
+		  <fieldset>
+			  <legend><span class="number">1</span>Your basic info</legend>
+<!--		  for should be connected to the id of the input or label-->
+			 <label for="name">Name:</label>
+			  <input type="text" id="name" name="user_name" placeholder="&#xf007;" class="form-control">
+
+			  <label for="mail">Email:</label>
+			  <input type="email" id="mail" name="user_email" class="form-control" placeholder="&#xf0e0;"> 
+
+			  <label for="password">Password:</label>
+			  <input type="password" id="password" name="user_password" class="form-control" placeholder="&#xf13e;">
+			  
+		  </fieldset>
+		 <legend><span class="number">2</span>Your basic profile</legend>
+		  <fieldset>
+		  <label for="bio">Biography:</label>
+		  <textarea name="user_bio" id="bio" cols="10" rows="2"></textarea>
+			  
+		  </fieldset>
+		  <button type="submit">Sign Up</button>
+	 </form>
+				</div>
+			</div>
+		</div>
+	
+	</main>
+	
+	
+
+</body>
+</html>
