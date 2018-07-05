@@ -1,0 +1,129 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Loading title</title>
+
+	<style>
+	* {
+  box-sizing: border-box;
+}
+body {
+  font-family: Gotham, Roboto, Arial, "sans-serif";
+  line-height: 1.618em;
+ background: #5f2c82;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #49a09d, #5f2c82);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #49a09d, #5f2c82); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  color: #fff;
+}
+.wrapper {
+  max-width: 50rem;
+  width: 100%;
+  margin: 5rem auto;
+  text-align: center;
+}
+h1.loading {
+  font-size: 3em;
+  font-weight: 400;
+}
+		/*Animation h1 LOADING*/
+/*		css selector to hide the dots */
+		span[class^="dot_"]{
+			opacity: 0;
+		}
+/*		dot_one animation*/
+		.dot_one{
+			animation: dot_one 2s infinite linear;
+		}
+		@keyframes dot_one {
+			0%{
+			opacity: 0;	
+			}
+			15%{
+			opacity: 0;
+			}
+			25%{
+			opacity: 1;
+			}
+			100%{
+			opacity: 1;	
+			}
+		}
+/*		dot_two animation*/
+		.dot_two{
+			animation: dot_two 2s infinite linear;
+		}
+		@keyframes dot_two {
+			0%{
+			opacity: 0;	
+			}
+			40%{
+			opacity: 0;
+			}
+			50%{
+			opacity: 1;
+			}
+			100%{
+			opacity: 1;	
+			}
+		}
+		/*		dot_three animation*/
+		.dot_three{
+			animation: dot_three 2s infinite linear;
+		}
+		@keyframes dot_three {
+			0%{
+			opacity: 0;	
+			}
+			65%{
+			opacity: 0;
+			}
+			75%{
+			opacity: 1;
+			}
+			100%{
+			opacity: 1;	
+			}
+		}
+/*		Bouncing ball*/
+		.bouncing_ball{
+			position: relative;
+			width: 4rem;
+			margin: 0 auto;
+			height: 12rem;
+		}
+		.ball{
+			width: 4rem;
+			height: 4rem;
+			border-radius: 50%;
+			background: #fff;
+			position: absolute;
+			top: 0;
+			
+		}
+		
+	
+	</style>
+</head>
+
+<body>
+	<div class="wrapper">
+       <div class="bouncing_ball">
+        <div class="ball"></div>
+      </div> 
+      <!-- <div class="spinner">
+        <div class="curve_top_left"></div>
+        <div class="curve_bottom_right"></div>
+        <div class="curve_top_right"></div>
+        <div class="curve_bottom_left"></div>
+        <div class="center_circle"></div>
+      </div> -->
+      
+      <h1 class="loading">LOADING <span class="dot_one">.</span><span class="dot_two">.</span><span class="dot_three">.</span> </h1>
+		
+    </div>
+</body>
+</html>
+
+
